@@ -17,36 +17,42 @@ const zucchine =[
     {
         varietà : 'romana',
         peso: '90 grammi',
-        lunghezza: ''
+        lunghezza: '21cm'
     },
     {
         varietà : 'campana',
         peso: '100 grammi',
-        lunghezza: ''
+        lunghezza: '10cm'
     },
     {
         varietà : 'francese',
         peso: '150 grammi',
-        lunghezza: ''
+        lunghezza: '25cm'
     },
     {
         varietà : 'velenosa',
         peso: '90 grammi',
-        lunghezza: ''
+        lunghezza: '14cm'
     },
     {
         varietà : 'belga',
         peso: '90 grammi',
-        lunghezza: ''
+        lunghezza: '10cm'
     },
     {
         varietà : 'zucchinosa',
         peso: '150 grammi',
-        lunghezza: ''
+        lunghezza: '20cm'
     },
     {
         varietà : 'mignon',
         peso: '50 grammi',
-        lunghezza: ''
+        lunghezza: '17cm'
     },
 ]
+
+let pesoTotale = 0;
+
+zucchine.forEach((element) => {
+    pesoTotale += element.peso;
+})

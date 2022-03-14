@@ -1,74 +1,19 @@
-const car = [
-    {
-        marca: 'Fiat',
-        modello: ' Panda',
-        alimentazione: 'benzina'
-    },
-    {
-        marca: 'Fiat',
-        modello: 'Idea',
-        alimentazione: 'gpl'
-    },
-    {
-        marca: 'Fiat',
-        modello: '500',
-        alimentazione: 'diesel'
-    },
-    {
-        marca: 'Fiat',
-        modello: 'Tipo ',
-        alimentazione: 'metano'
-    },
-    {
-        marca: 'BMW',
-        modello: ' Serie 1 ',
-        alimentazione: 'benzina'
-    },
-    {
-        marca: 'BMW',
-        modello: ' Serie 2',
-        alimentazione: 'benzina'
-    },
-    {
-        marca: 'BMW',
-        modello: 'Serie 3 ',
-        alimentazione: 'diesel'
-    },
-    {
-        marca: 'BMW',
-        modello: 'Serie 4 ',
-        alimentazione: 'diesel'
-    },
-    {
-        marca: 'VW',
-        modello: 'Polo ',
-        alimentazione: 'diesel'
-    },
-    {
-        marca: 'VW',
-        modello: 'Golf ',
-        alimentazione: 'benzina'
-    },
-    {
-        marca: 'VW',
-        modello: ' Tiguan',
-        alimentazione: 'benzina'
-    },
-    {
-        marca: 'VW',
-        modello: ' Scirocco',
-        alimentazione: 'diesel'
-    },
-]
+const numbers = [12, 14, 15, 16, 76, 98, 34, 56 ,43, 21];
+const words = ['ciao', 'mamma', 'guarda', 'come','mi', 'diverto', 'qui', 'a', 'boolean', 'oggi']
 
 
-const fuelCar = car.filter((element) => {
-    if ( element.alimentazione === 'benzina') return true;});
-const dieselCar = car.filter((element) => {
-    if ( element.alimentazione === 'diesel') return true;});
-const otherCar = car.filter ((element) => { 
-    if ( !element.alimentazione === 'benzina'  || !element.alimentazione === 'diesel') return true});
+const newNumbers = numbers.map((element) => isNaN(parseInt(element)));
+const reversedWord = [];
 
-console.log(fuelCar);
-console.log(dieselCar);
-console.log(otherCar);
+
+
+
+
+
+function reverseWord(string){
+    return string.split('').reverse('').join('');
+}
+
+function negativeNumbers (num){
+    return -num
+};

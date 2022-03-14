@@ -1,9 +1,12 @@
+const number =[1,2,3];
+const letter= ['a','b','c']
 
+const fusionArray = [];
 
-const strings = ['ciao', 'MAMMA', 'guarda', 'come', 'mI', 'diverto'];
+function sumTwoArray (firstArray, secondArray){
+    for ( let i = 0; i < number; i++){
+        fusionArray.push(firstArray[i] , secondArray[i])
+    } return fusionArray;
+}
 
-const fixedArray = strings.map((element) => {
-    return element.charAt(0).toUpperCase() + element.substring(1).toLowerCase()
-});
-
-console.log(fixedArray)
+console.log(fusionArray)

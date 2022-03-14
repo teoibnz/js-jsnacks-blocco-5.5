@@ -1,28 +1,12 @@
+const numbers = [1,2,3,4,5]
 
+let firstNumber = Math.floor(Math.random() * numbers.length);
+let secondNumber = Math.floor(Math.random() * firstNumber);
 
-const animal = [
-    {
-        nome : 'cane',
-        famiglia: 'canidi',
-        classe: 'mammiferi',
-    },
-    {
-        nome : 'leone',
-        famiglia: 'felidi',
-        classe: 'mammiferi',
-    },
-    {
-        nome : 'gallina',
-        famiglia: 'fasianidi',
-        classe: 'uccelli',
-    },
-    {
-        nome : 'ratto',
-        famiglia: 'roditori',
-        classe: 'sorci',
-    },
-]
-
-const listaMammiferi = animal.filter((element) => { if (element.classe == 'mammiferi') return true;})
-
-console.log(listaMammiferi)
+let newArray = []
+function generator (array, num1, num2,){
+    const newArray = [];
+    if ((firstNumber < numbers.length) && (secondNumber < firstNumber)){
+        newArray.push()
+    }
+} return newArray
